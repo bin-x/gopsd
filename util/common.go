@@ -104,7 +104,6 @@ func UnpackRLEBits(data []int8, length int) []int8 {
 	wPos, rPos := 0, 0
 	for rPos < len(data) {
 		n := data[rPos]
-		rPos++
 		if n > 0 {
 			count := int(n) + 1
 			for j := 0; j < count; j++ {
