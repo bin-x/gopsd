@@ -9,10 +9,10 @@ import (
 )
 
 func main() {
-	doc, err := gopsd.ParseFromPath("./test.psd")
+	doc, err := gopsd.ParseFromPath("./examples/test.psd")
 	checkError(err)
 
-	os.Mkdir("./images", 0777)
+	os.Mkdir("./examples/images", 0777)
 
 	for _, layer := range doc.Layers {
 		fmt.Println(layer.ToString())
@@ -22,7 +22,7 @@ func main() {
 }
 
 func saveAsPNG(layer *gopsd.Layer) {
-	out, err := os.Create("./images/" + layer.Name + ".png")
+	out, err := os.Create("./examples/images/" + layer.Name + ".png")
 	checkError(err)
 
 	img, err := layer.GetImage()
