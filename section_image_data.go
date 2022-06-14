@@ -4,7 +4,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/solovev/gopsd/util"
+	"github.com/bin-x/gopsd/util"
 )
 
 func readImageData(doc *Document) {

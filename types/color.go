@@ -1,6 +1,6 @@
 package types
 
-import "github.com/solovev/gopsd/util"
+import "github.com/bin-x/gopsd/util"
 
 type Color struct {
 	red, green, blue, alpha int16

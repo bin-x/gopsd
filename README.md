@@ -11,7 +11,7 @@ import (
 	"image/png"
 	"os"
 
-	"github.com/solovev/gopsd"
+	"github.com/bin-x/gopsd"
 )
 
 func main() {

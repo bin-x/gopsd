@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/solovev/gopsd/util"
+	"github.com/bin-x/gopsd/util"
 )
 
 type Descriptor struct {
